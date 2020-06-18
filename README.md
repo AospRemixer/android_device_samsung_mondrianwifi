@@ -17,13 +17,16 @@ Device configuration for the Samsung Tab Pro 8.4
   - Make a workspace
 
 mkdir ~/bin
+
 cd ~/bin
 
   - Do repo init & sync
 
 repo init -u git://github.com/Colt-Enigma/platform_manifest.git -b c10
 
-- Create .repo/local_manifests/roomservice.xml with the following content:
+  - Create .repo/local_manifests/roomservice.xml with the following content:
+
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <project name="hyakki-/android_device_samsung_mondrianwifi" path="device/samsung/mondrianwifi" remote="github" />
@@ -32,6 +35,7 @@ repo init -u git://github.com/Colt-Enigma/platform_manifest.git -b c10
   <project name="LineageOS/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" />
   <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" remote="github" />
 </manifest>
+```
 
 repo sync
 
