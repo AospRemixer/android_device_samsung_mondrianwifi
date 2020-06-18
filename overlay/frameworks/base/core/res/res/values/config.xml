@@ -100,6 +100,7 @@
 	<!-- Smart Charging -->
     <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/hv_charger_set</string>
     <string name="config_SmartChargingSupspendValue" translatable="false">0</string>
+	<!-- This device cannot re-enable the charger properly with this set to 1 it will show charging but no current is drawn from plug disable for now. -->
     <string name="config_SmartChargingResumeValue" translatable="false">0</string>
 	
     <!-- Whether the always on display mode is available. -->
@@ -112,7 +113,7 @@
 	<!-- Doze mode -->
     <bool name="config_dozeAfterScreenOffByDefault">true</bool>
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
-    <integer name="config_screenBrightnessDoze">1</integer>
+    <integer name="config_screenBrightnessDoze">5</integer>
 
     <!-- Whether the display blanks itself when going from a doze to a non-doze state -->
     <bool name="config_displayBlanksAfterDoze">false</bool>
