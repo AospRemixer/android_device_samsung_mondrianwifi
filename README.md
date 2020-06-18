@@ -1,4 +1,7 @@
 Device configuration for the Samsung Tab Pro 8.4
+Copyright (C) 2019 The LineageOS Project
+Copyright (C) 2019 Valera Chigir <valera1978@tut.by>
+Copyright (C) 2020 Gigabyte
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
