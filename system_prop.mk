@@ -8,8 +8,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-swap=false
 
 # Low memory
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.low_ram=true
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    ro.config.low_ram=true
 
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -19,16 +19,21 @@ PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.pcm.16bit.enable=true \
     audio.offload.pcm.24bit.enable=true \
     audio.offload.video=true \
-    persist.vendor.audio.fluence.speaker=true \
-    persist.vendor.audio.fluence.voicecall=true \
-    persist.vendor.audio.fluence.voicerec=false \
-    ro.vendor.audio.sdk.fluencetype=fluence \
+	audio.offload.multiaac.enable=true \
+	audio.offload.disable=1 \
     vendor.audio.offload.multiple.enabled=false \
     vendor.audio_hal.period_size=192 \
-    vendor.dedicated.device.for.voip=true \
+    vendor.dedicated.device.for.voip=false \
+	vendor.voice.voip.conc.disabled=true \
     vendor.voice.path.for.pcm.voip=false
 
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.audio.sdk.fluencetype=none \
+	ro.hardware.audio.r_submix=default \
+    persist.vendor.audio.fluence.speaker=false \
+    persist.vendor.audio.fluence.voicecall=false \
+    persist.vendor.audio.fluence.voicerec=false \
+	persist.vendor.audio.fluence.audiorec=false \
     audio.offload.gapless.enabled=false \
     av.offload.enable=true
 
@@ -109,3 +114,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true
+	
+# Cast hacks
+PRODUCT_PROPERTY_OVERRIDES += \
+    wifi.direct.interface=p2p0 \
+    persist.debug.wfd.enable=1 \
+	ro.hdmi.enable=true \
+	ro.hdmi.mirror.enable=true \
+	persist.sys.wfd.virtual=0
