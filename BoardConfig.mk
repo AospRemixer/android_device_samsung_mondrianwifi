@@ -35,8 +35,8 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
 # Architecture
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
-#TARGET_CPU_ABI := armeabi-v7a
-#TARGET_CPU_ABI2 := armeabi
+TARGET_CPU_ABI := armeabi-v7a
+TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := generic
 TARGET_CPU_VARIANT_RUNTIME := krait
 
@@ -90,9 +90,6 @@ ifeq ($(HOST_OS),linux)
     WITH_DEXPREOPT := true
   endif
 endif
-
-PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
-PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false	
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
