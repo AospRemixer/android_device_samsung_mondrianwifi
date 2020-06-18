@@ -313,8 +313,8 @@
 		<path name="spk" />
 		<ctl name="RX4 Digital Volume" value="82" />
 		<ctl name="RX6 Digital Volume" value="82" />
-		<ctl name="LINEOUT3 Volume" value="19" />
-		<ctl name="LINEOUT4 Volume" value="19" />
+		<ctl name="LINEOUT3 Volume" value="255" />
+		<ctl name="LINEOUT4 Volume" value="255" />
 	</path>
 
 	<path name="headset">
