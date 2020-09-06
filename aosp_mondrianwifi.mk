@@ -12,6 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+TARGET_BOOT_ANIMATION_RES := 1440x2960
+# Inherit some common Aosp Remix stuff.
+$(call inherit-product, vendor/aosp/config/common.mk)
+
 # Inherit from those products. Most specific first.
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/core.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
