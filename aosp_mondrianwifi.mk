@@ -12,10 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-TARGET_BOOT_ANIMATION_RES := 1440x2960
-# Inherit some common Colt stuff.
-$(call inherit-product, vendor/colt/config/common.mk)
-
 # Inherit from those products. Most specific first.
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/core.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
@@ -24,10 +20,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/samsung/mondrianwifi/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/colt/config/common_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/aosp/config/common_full_tablet_wifionly.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := colt_mondrianwifi
+PRODUCT_NAME := aosp_mondrianwifi
 PRODUCT_DEVICE := mondrianwifi
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
