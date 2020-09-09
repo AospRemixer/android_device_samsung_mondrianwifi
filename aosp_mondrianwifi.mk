@@ -13,6 +13,7 @@
 # limitations under the License.
 
 TARGET_BOOT_ANIMATION_RES := 1440x2960
+TARGET_GAPPS_ARCH := arm
 # Inherit some common Aosp Remix stuff.
 $(call inherit-product, vendor/aosp/config/common.mk)
 
