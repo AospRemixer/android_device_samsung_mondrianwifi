@@ -15,7 +15,7 @@
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm
 # Inherit some common Aosp Remix stuff.
-$(call inherit-product, vendor/revengeos/config/common.mk)
+$(call inherit-product, vendor/evolution/config/common.mk)
 
 # Inherit from those products. Most specific first.
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/core.mk)
@@ -25,7 +25,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/samsung/mondrianwifi/device.mk)
 
 # Some Extra's
-REVENGEOS_BUILDTYPE := ALPHA
+EVO_BUILDTYPE := UNOFFICIAL
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := aosp_mondrianwifi
