@@ -14,7 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_mondrianwifi.mk
+    $(LOCAL_DIR)/lineage_mondrianwifi.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_mondrianwifi-userdebug
+    lineage_mondrianwifi-userdebug

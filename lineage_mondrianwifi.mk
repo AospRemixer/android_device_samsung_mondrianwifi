@@ -12,11 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm
-# Inherit some common Aosp Remix stuff.
-$(call inherit-product, vendor/evolution/config/common.mk)
-
 # Inherit from those products. Most specific first.
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/core.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
@@ -24,11 +19,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 # Inherit from mondrianwifi device
 $(call inherit-product, device/samsung/mondrianwifi/device.mk)
 
-# Some Extra's
-EVO_BUILDTYPE := UNOFFICIAL
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := aosp_mondrianwifi
+PRODUCT_NAME := lineage_mondrianwifi
 PRODUCT_DEVICE := mondrianwifi
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung

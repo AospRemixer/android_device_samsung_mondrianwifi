@@ -746,7 +746,6 @@ on boot
     chown system radio /sys/class/power_supply/battery/lcd
     chown system radio /sys/class/power_supply/ps/status
     chmod 0664 /sys/class/power_supply/ps/status
-	chmod 0666 /sys/class/power_supply/battery/hv_charger_set
 
     # Permission for fast dormancy for RIL
     chown system radio /sys/devices/virtual/sec/bamdmux/waketime

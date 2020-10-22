@@ -515,6 +515,7 @@ static int device__close(struct hw_device_t *dev) {
     if (ctx != NULL) {
         int retval = ctx->close();
         delete ctx;
+        pthread_mutex_unlock(&init_modules_mutex);
         return retval;
     }
 
